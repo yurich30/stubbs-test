@@ -1,0 +1,33 @@
+.carousel__inner{
+    width: 751px;
+    height: 260px;
+    background-color: #3E3E3E;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0;
+}
+
+.carousel__inner::before{
+    content: "";
+    width: 636px;
+    height: 2px;
+    background-color: #E4B56B;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.carousel__text{
+    font-size: 40px;
+    line-height: 65px;
+    font-weight: 500;
+    padding: 65px 80px 0px 90px;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+}

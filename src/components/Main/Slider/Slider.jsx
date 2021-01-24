@@ -1,29 +1,35 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import BackgroundSliderImage from '../../../images/sliderimg.png'
+import './Slider.css'
 
-class DemoCarousel extends Component {
-    render() {
+const DemoCarousel = () => {
+    
         return (
             <Carousel>
                 <div>
-                    <img src="assets/1.jpeg" />
-                    <p className="legend">Legend 1</p>
+                    <img src={BackgroundSliderImage} className='carousel-image'/>
+                    <div className="carousel__inner">
+                        <p className="carousel__text">Высокоточное изготовление изделий из металла по чертежам</p>
+                    </div>
                 </div>
                 <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
+                    <img src={BackgroundSliderImage} />
+                    <div className="carousel__inner">
+                        <p className="carousel__text">Высокоточное изготовление изделий из металла по чертежам</p>
+                    </div>
                 </div>
                 <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
+                    <img src={BackgroundSliderImage} />
+                    <div className="carousel__inner">
+                        <p className="carousel__text">Высокоточное изготовление изделий из металла по чертежам</p>
+                    </div>
                 </div>
             </Carousel>
         );
-    }
+    
 };
 
-ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
 
 export default DemoCarousel;
