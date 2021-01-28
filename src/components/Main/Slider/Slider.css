@@ -1,3 +1,13 @@
+Carousel {
+    margin-bottom: 38px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
 .carousel__inner{
     width: 751px;
     height: 260px;
@@ -7,7 +17,7 @@
     z-index: 5;
     top: 50%;
     transform: translateY(-50%);
-    left:0;
+    margin-left: -90px;
 }
 
 .carousel__inner::before{
@@ -30,4 +40,10 @@
     margin: 0;
     text-align: left;
     color: #fff;
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{
+    background-color: #E4B56B;
+    opacity: 1;
+    outline: none;
 }
